@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+    
+  </head>
+  <body>
+    <!-- main page -->
+    <div id='main-page' class="welcome-section">
+      <nav class="navbar">
+        <h1 class="logo"><span></span> <a href="#">TravelApp</a></h1>
+      </nav>
+
+      <section class="hero-section">
+        
+        <div id="search-form">
+          <form id="main-form">
+            <div id="place-form">
+              <label for="">Place</label>
+             
+              <input
+                type="text"
+                onfocus="this.value=''"
+                placeholder="Enter the name of a city"
+                id="place"
+                name="place"
+              />
+            </div>
+
+          <div class="row">
+            <div id="submit" class="btn-search">
+             
+              <input type="submit" value="Search" class="btn-text" />
+            </div>
+          </div>
+          </form>
+        </div>
+      </section>
+
+      </div>
+    <!-- user account  -->
+    <div id='user-account' class='hide'>
+      <div class="upper-container">
+        <div id='weather-box'>
+          <h1 id='city-name'>City</h1>
+          <div id='weathers'>
+              <div id='initial-weather' class='currentweather'></div>
+             
+          </div>
+          <p id='check-more'>Check more about weather <a href='https://openweathermap.org/city' target="_blank" id='more-weather'>here</a></p>
+     </div>  
+       <div class='city-boxes'>
+          <button value= "thingstodo" id="thingstodo-btn"class= 'things-to-do-box box'>Things to do</button>
+          <button value="hotels" id="hotels-btn" class='hotels-box box'>Hotels</button>
+          <button value="restaurants" id="restaurants-btn"class='restaurants-box box'>Restaurants</button>
+          <button value="monuments" id="monuments-btn"class='monuments-box box'>Monuments</button>
+          </div> 
+          <div id='attractions' class='places'></div>
+       </div>
+      <div id="showInfoDiv" class="hide">
+       <div id="show-info"></div>
+       <button id="close-bar"></button>
+      </div>
+    
+    </div>
+    
+  </body>
+</html
